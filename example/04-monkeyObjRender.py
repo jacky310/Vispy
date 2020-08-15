@@ -32,7 +32,7 @@ void main()
 class Canvas(app.Canvas):
     def __init__(self):
         app.Canvas.__init__(self, size=(512,512), title='Monkey', keys='interactive')
-        verts, faces, normals, texcoords = io.read_mesh("./monkey.obj")
+        verts, faces, normals, texcoords = io.read_mesh("../model/monkey/monkey.obj")
         obj = MeshData(verts, faces)
 
         self.program = gloo.Program(vert=vertex, frag=fragment)

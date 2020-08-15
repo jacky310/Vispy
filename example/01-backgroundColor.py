@@ -1,4 +1,3 @@
-# pylint: disable=invalid-name, unused-argument
 # This example is going to show you how to change the background color on the Canvas
 from vispy import app, gloo
 
@@ -8,7 +7,7 @@ class Canvas(app.Canvas):
         self.show()
 
     def on_draw(self, event):
-        gloo.set_clear_color((0, 1.0, 1.0, 1.0))
+        gloo.set_clear_color((0, 1.0, 1.0, 1.0)) # for changing the background color
         gloo.clear()
 
 c = Canvas()

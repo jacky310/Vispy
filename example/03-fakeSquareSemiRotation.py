@@ -1,4 +1,4 @@
-
+# This example is going to show you how to make a square and create a timer for scaling it
 from vispy import gloo, app
 import numpy as np
 
